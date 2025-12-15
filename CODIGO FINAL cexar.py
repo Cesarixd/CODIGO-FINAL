@@ -14,7 +14,7 @@ azul = (50, 153, 213)
 
 width, height = 600, 400
 screen = pygame.display.set_mode((width, height))
-pygame.display.set_caption("🐍 Snake Cexar")
+pygame.display.set_caption("Snake Cexar")
 
 head_img = pygame.image.load("assets/head.png").convert_alpha()
 head_img = pygame.transform.scale(head_img, (40, 40))
@@ -273,4 +273,5 @@ def menu_inicio():
 
 intro_screen()
 menu_inicio()
+
 game_loop()
