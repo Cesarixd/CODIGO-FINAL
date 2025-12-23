@@ -1,7 +1,17 @@
 Hola gente, este es un proyecto del juego de la Serpiente, hecho en Python usando la libreria de Pygame.
 El objetivo principal del desarrollo fue crear un sistema visualmente detallado.
 
-1. RENDERIZADO DINÁMICO DE LA SERPIENTE
+1. El codigo usa un sistema de estados que controla las diferentes pantallas:
+
+Pantalla de Introducción: Muestra el título
+
+Menú Principal: Da inicio al juego
+
+Estado de Juego: Donde ocurre la jugabilidad principal
+
+Pantalla de Game Over: Muestra resultados y opciones
+
+2. RENDERIZADO DINÁMICO DE LA SERPIENTE
 
 La función central draw_snake maneja toda la complejidad visual:
 
@@ -22,7 +32,16 @@ Animación de Comida: La cabeza de la serpiente cambia a la imagen de "boca abie
 
 .
 
-2. ELEMENTO DE JUGABILIDAD: Comida Especial
+3. ELEMENTO DE JUGABILIDAD
+
+Detección de Curvas: Análisis vectorial entre segmentos.
+
+Path Smoothing: Uso de sprites de curva para transiciones.
+
+Collision: Optimización mediante alineación.
+
+4. Alimentos:
+
 El juego incluye dos tipos de alimento:
 
 Manzana Estándar: Incrementa la longitud en 1 segmento y otorga 1 punto.
@@ -38,7 +57,7 @@ introduciendo un riesgo/recompensa.
 
 .
 
-3. REQUISITOS Y EJECUCIÓN:
+5. REQUISITOS Y EJECUCIÓN:
 Para poder correr este juego, se requiere lo siguiente:
 
 Python 3
